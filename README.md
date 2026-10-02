@@ -1,4 +1,4 @@
-# Technical Test Go
+# Technical Test (treasury.id)
 
 Jawaban untuk lima soal di [TECHNICAL_TEST.txt](TECHNICAL_TEST.txt). Project ini menggunakan Go 1.27.1 dengan nama module `treasury.id`, sesuai [go.mod](go.mod).
 
