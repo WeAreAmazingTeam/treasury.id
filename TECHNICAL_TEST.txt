@@ -1,0 +1,50 @@
+Golang
+
+1. write a function
+func GO(arr []int) int
+if arr contains negative and positive number, should return 0
+if arr only have positive number, return the smallest number (except 0)
+if arr only have negative number, return the biggest number (except 0)
+e.g:
+arr = [-1,1], the function should return 0
+arr = [-1,-7,-5], then function should return -2
+arr = [1,2,1,6], the function should return 3
+
+
+2. write a function
+func GO(exclude []int, nums ...int) (int, error)
+join the numbers as one int variable, then do reverse, but exclude number if exists on parameter exclude.
+e.q:
+GO([]int{0,1,0}, 1000, 1010), the function should return 0, error with message "not found"
+GO([]int{0,1,0}, 1259, 2601), the function should return 62952, nil
+
+
+3. write a function
+func GO(numsA, numsB []int) []int
+find numbers on numsA that does exists in numsB.
+and do order descending.
+e.q:
+numsA = [1,2], and numsB = [1,3], the function should return [1].
+numsA = [1,2,2] and numsB = [1,2,4], the function should return [2,1].
+
+
+4. write a function
+func GO(num int) map[int]int
+split the int become array of single digit int, then do group and count the same number.
+e.q:
+num = 1223334, the function should return
+1 -> 1
+2 -> 2
+3 -> 3
+4 -> 1
+
+
+5. write a function
+func GO(nums ...int) int
+do multiplication for 2 number on even index and odd index.
+if the last index doesn't have the pair, do multiplication with his own number.
+use concurrency to perform the multiplication.
+use main thread to perform the summation.
+e.g:
+nums = [1,2,3,4], the function should return 14, from (1*2) + (3*4), with 2 concurrency process.
+nums = [1,2,3,4,5], the function should return 39, from (1*2) + (3*4) + (5*5), with 3 concurrency process.
